@@ -1,6 +1,6 @@
 # Chutian Chen
-+1 300 300 3000 **∙** czc6350@psu.edu  
-[Adipose](https://i.ytimg.com/vi/lczOrJjW4Dk/maxresdefault.jpg)
++1 300 300 3000 **∙** czc6350@psu.edu 
+![Adipose](https://i.ytimg.com/vi/lczOrJjW4Dk/maxresdefault.jpg)
 **EDUCATION**  
 **The Pennsylvania State University**	   Aug 2025 – Present  
 ***Graduate Student in Biochemistry, Microbiology, and Molecular Biology (BMMB)***	University Park, PA, USA
