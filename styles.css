@@ -1,44 +1,331 @@
-/* Custom styles for the CV website */
+/* Doctor Who Inspired Styling */
+
+/* Import a sci-fi inspired font */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;900&display=swap');
+
+:root {
+  --dw-dark-bg: #0a0e27;
+  --dw-darker-bg: #050810;
+  --dw-blue: #003b6f;
+  --dw-bright-blue: #0066cc;
+  --dw-orange: #ff6b35;
+  --dw-gold: #ffa500;
+  --dw-light-text: #e8edf2;
+  --dw-accent: #00d9ff;
+  --dw-border: #1a2845;
+}
+
+/* Global dark theme */
+body {
+  background-color: var(--dw-dark-bg);
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(0, 59, 111, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(0, 102, 204, 0.2) 0%, transparent 50%);
+  color: var(--dw-light-text);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
+}
+
+/* Title styling */
+h1.title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5em;
+  font-weight: 900;
+  text-align: center;
+  background: linear-gradient(135deg, var(--dw-accent) 0%, var(--dw-bright-blue) 50%, var(--dw-orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(0, 217, 255, 0.3);
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.3em;
+  color: var(--dw-gold);
+  margin-bottom: 2em;
+  font-weight: 500;
+}
+
+/* Hero section */
+.hero-section {
+  background: linear-gradient(180deg, var(--dw-darker-bg) 0%, var(--dw-dark-bg) 100%);
+  padding: 2em;
+  border-radius: 15px;
+  border: 1px solid var(--dw-border);
+  margin-bottom: 2em;
+  box-shadow: 0 10px 40px rgba(0, 102, 204, 0.2);
+}
 
 .contact-info {
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-bottom: 1.5em;
-  color: #666;
+  color: var(--dw-accent);
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
-/* Center the image */
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* Doctor Who images */
+.doctor-who-images {
+  text-align: center;
+  margin: 2em 0;
 }
 
-/* Improve section spacing */
-h2 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid #e9ecef;
-  padding-bottom: 0.3em;
+.dw-image {
+  border-radius: 15px;
+  border: 3px solid var(--dw-bright-blue);
+  box-shadow: 0 0 30px rgba(0, 102, 204, 0.5);
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h3 {
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  color: #2c3e50;
+.dw-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px rgba(0, 217, 255, 0.7);
 }
 
-/* Improve list spacing */
-ul {
+.image-credit {
+  text-align: center;
+  font-size: 0.85em;
+  color: #8899aa;
   margin-top: 0.5em;
-  margin-bottom: 1em;
+  font-style: italic;
 }
 
-li {
+/* Section headers */
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 2.5em;
+  margin-bottom: 1.2em;
+  padding-bottom: 0.5em;
+  border-bottom: 3px solid var(--dw-bright-blue);
+  color: var(--dw-accent);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: var(--dw-orange);
+}
+
+/* Collapsible research projects */
+.research-project {
+  background: linear-gradient(135deg, rgba(0, 59, 111, 0.3) 0%, rgba(5, 8, 16, 0.5) 100%);
+  border: 2px solid var(--dw-border);
+  border-left: 5px solid var(--dw-bright-blue);
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+  padding: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.research-project:hover {
+  border-left-color: var(--dw-accent);
+  box-shadow: 0 6px 25px rgba(0, 102, 204, 0.4);
+  transform: translateX(5px);
+}
+
+.research-project[open] {
+  border-left-color: var(--dw-orange);
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.2) 0%, rgba(5, 8, 16, 0.6) 100%);
+}
+
+.project-title {
+  padding: 1.3em;
+  cursor: pointer;
+  font-size: 1.1em;
+  list-style: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-title::-webkit-details-marker {
+  display: none;
+}
+
+.project-title::before {
+  content: '▶';
+  color: var(--dw-accent);
+  font-size: 0.9em;
+  margin-right: 0.8em;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.research-project[open] .project-title::before {
+  transform: rotate(90deg);
+  color: var(--dw-orange);
+}
+
+.project-title:hover {
+  background: rgba(0, 102, 204, 0.15);
+}
+
+.project-title strong {
+  color: var(--dw-light-text);
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.project-meta {
+  display: block;
+  margin-top: 0.8em;
+  font-size: 0.95em;
+  line-height: 1.7;
+}
+
+.project-meta span {
+  display: block;
   margin-bottom: 0.3em;
 }
 
-/* Style for italic text (positions) */
-em {
-  color: #555;
+.project-meta .date {
+  color: var(--dw-gold);
+  font-weight: 600;
+}
+
+.project-meta .date::before {
+  content: '📅 ';
+  margin-right: 0.3em;
+}
+
+.project-meta .location {
+  color: var(--dw-accent);
+  font-weight: 500;
+}
+
+.project-meta .location::before {
+  content: '📍 ';
+  margin-right: 0.3em;
+}
+
+.project-meta .supervisor {
+  color: #b0c4de;
+  font-size: 0.9em;
+}
+
+.project-meta .supervisor::before {
+  content: '👤 ';
+  margin-right: 0.3em;
+}
+
+.project-details {
+  padding: 0 1.3em 1.3em 1.3em;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-details ul {
+  margin-top: 1em;
+}
+
+.project-details li {
+  margin-bottom: 0.7em;
+  line-height: 1.6;
+  color: var(--dw-light-text);
+  position: relative;
+  padding-left: 1.5em;
+}
+
+.project-details li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--dw-accent);
+  font-weight: bold;
+}
+
+/* Education section */
+h2 + p strong,
+h2 + ul strong {
+  color: var(--dw-gold);
+  font-weight: 600;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+  line-height: 1.7;
+}
+
+/* Links */
+a {
+  color: var(--dw-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--dw-orange);
+  text-decoration: underline;
+}
+
+/* Navbar override */
+.navbar {
+  background-color: var(--dw-darker-bg);
+  border-bottom: 2px solid var(--dw-bright-blue);
+  box-shadow: 0 4px 20px rgba(0, 102, 204, 0.3);
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--dw-light-text) !important;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.nav-link:hover {
+  color: var(--dw-accent) !important;
+}
+
+/* Content container */
+#quarto-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  h1.title {
+    font-size: 2.5em;
+  }
+
+  .project-title {
+    font-size: 1em;
+    padding: 1em;
+  }
+
+  .project-meta {
+    font-size: 0.85em;
+  }
 }

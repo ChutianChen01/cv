@@ -1,15 +1,24 @@
 ---
-title: "Chutian Chen"
+title: "Chutian Chen, Nobody"
+subtitle: "Graduate Student in Biochemistry, Microbiology, and Molecular Biology"
 format:
   html:
     toc: false
 ---
 
+::: {.hero-section}
 ::: {.contact-info}
 +1 300 300 3000 **∙** czc6350@psu.edu
 :::
 
-![](https://tldrmoviereviews.com/wp-content/uploads/2023/11/the-star-beast-3.jpg){width=400px}
+::: {.doctor-who-images}
+![The Star Beast (Doctor Who, BBC)](https://tldrmoviereviews.com/wp-content/uploads/2023/11/the-star-beast-3.jpg){.dw-image width=300px}
+:::
+
+::: {.image-credit}
+*Image: The Star Beast © BBC Studios*
+:::
+:::
 
 ## EDUCATION
 
@@ -25,49 +34,98 @@ format:
 
 ## ACADEMIC and RESEARCH EXPERIENCE
 
-### Using Bacterial Growth Inhibition Screen (BGIS) to Elucidate Functions of Dark Proteins
-*March 2024 – July 2025 | Kunshan, China*
-*Supervisor: Prof. Ferdinand Kappes*
+<details class="research-project">
+<summary class="project-title">
+<strong>Using Bacterial Growth Inhibition Screen (BGIS) to Elucidate Functions of Dark Proteins</strong>
+<div class="project-meta">
+<span class="date">March 2024 – July 2025</span>
+<span class="location">Kunshan, China</span>
+<span class="supervisor">Supervisor: Prof. Ferdinand Kappes</span>
+</div>
+</summary>
+<div class="project-details">
 
 - Selected human candidate dark proteins from databases in conjunction with AlphaFold protein prediction.
 - Constructed an inducible protein expression system with a GST tag.
 - Used BGIS to examine the presence of functional domains in the proteins.
 - Located the functional domain(s) by fragmenting the proteins and artificially mutating the sequence with error-prone PCR.
 
-### Examination and Identification of Toxin and Antitoxin in *Clostridium* species
-*June 2024 – August 2024 | Hangzhou, China*
-*Westlake University. Visiting Student. Funded by Student Experimental Learning Fellowship (**SELF**)
-Supervisor: Prof. Liang Tao and Dr. Qiankun Bai*
+</div>
+</details>
+
+<details class="research-project">
+<summary class="project-title">
+<strong>Examination and Identification of Toxin and Antitoxin in *Clostridium* species</strong>
+<div class="project-meta">
+<span class="date">June 2024 – August 2024</span>
+<span class="location">Hangzhou, China</span>
+<span class="supervisor">Westlake University, Visiting Student<br>Funded by Student Experimental Learning Fellowship (SELF)<br>Supervisor: Prof. Liang Tao and Dr. Qiankun Bai</span>
+</div>
+</summary>
+<div class="project-details">
 
 - Examined a *Clostridium*-derived set of toxin-antitoxins for their toxicity in *E. coli* and the interaction between the two proteins.
 - Conducted toxicity test on a series of toxins from the *Clostridium* family.
 - Designed Loop-Mediated Isothermal Amplification (LAMP) procedures towards the development of kits for commercial use of examining pathogenic microorganisms in humans and pets.
 
-### Monokaryon Separation and Haplotype Identification of *Suillus*
-*August 2023 – December 2023 | Durham, USA*
-*Student Researcher. Supervisor: Prof. Rytas Vilgalys and Dr. Lotus Lofgren*
+</div>
+</details>
+
+<details class="research-project">
+<summary class="project-title">
+<strong>Monokaryon Separation and Haplotype Identification of *Suillus*</strong>
+<div class="project-meta">
+<span class="date">August 2023 – December 2023</span>
+<span class="location">Durham, USA</span>
+<span class="supervisor">Student Researcher<br>Supervisor: Prof. Rytas Vilgalys and Dr. Lotus Lofgren</span>
+</div>
+</summary>
+<div class="project-details">
 
 - Designed primers for distinguishing the mating type of *Suillus*. Separated monokaryon culture and did sequence analysis on PCR products to improve primer design, allowing subsequent genetic manipulation on the cells.
 - Worked on improving fungi live cell imaging to verify monokaryon cultures.
 - Conducted fieldwork to collect and identify samples of local mushrooms, contributing to ongoing multi-omics studies.
 
-### Development of a dsRNA-based Pesticide
-*November 2022 – November 2023 | Kunshan, China*
-*DKU iGEM Team: Citrus Guard. Team member. Supervisor: Prof. Linfeng Huang*
+</div>
+</details>
+
+<details class="research-project">
+<summary class="project-title">
+<strong>Development of a dsRNA-based Pesticide</strong>
+<div class="project-meta">
+<span class="date">November 2022 – November 2023</span>
+<span class="location">Kunshan, China</span>
+<span class="supervisor">DKU iGEM Team: Citrus Guard<br>Supervisor: Prof. Linfeng Huang</span>
+</div>
+</summary>
+<div class="project-details">
 
 - Designed and constructed a dsRNA expression system for dsRNA-based pesticide production.
 - Expressed the dsRNA and examined the interference efficacy on *Diaphorin citri* larvae.
 - Designed a cell-free dsRNA production system for large-scale dsRNA production.
 - Collaborated with a multidisciplinary team to optimize system design and improvement of efficiency.
 
-### Screening of Seven Chemical Candidates Using *Caenorhabditis elegans*
-*January 2022 – March 2024 | Kunshan, China*
-*Student Researcher, Summer Research Scholar (**SRS**). Supervisor: Prof. Hyun-Min Kim*
+</div>
+</details>
+
+<details class="research-project">
+<summary class="project-title">
+<strong>Screening of Seven Chemical Candidates Using *Caenorhabditis elegans*</strong>
+<div class="project-meta">
+<span class="date">January 2022 – March 2024</span>
+<span class="location">Kunshan, China</span>
+<span class="supervisor">Student Researcher, Summer Research Scholar (SRS)<br>Supervisor: Prof. Hyun-Min Kim</span>
+</div>
+</summary>
+<div class="project-details">
 
 - Conducted phenotypic analyses on *C. elegans* mutant strains to gain basic lab skills and familiarity with the process of phenotypic analysis.
 - Completed phenotypic analysis independently on wild type *C. elegans* treated with multiple chemicals used in traditional Chinese medicine. Compared the embryonic lethality and larval arrest rate to evaluate the effect of the chemicals on germ cell development.
 - Used DAPI staining and confocal microscopy to observe morphological changes of nuclei in the germ cells.
 - Acquired practical research expertise in a range of techniques including PCR, gel electrophoresis, RNA extraction, cDNA synthesis, immunostaining, and RNA interference in *C. elegans*.
+
+</div>
+</details>
 
 ## FELLOWSHIPS AND AWARDS
 
